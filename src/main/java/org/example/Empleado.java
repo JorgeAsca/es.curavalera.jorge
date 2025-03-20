@@ -2,14 +2,14 @@ package org.example;
 
 public class Empleado {
     String dni;
-    String nombre;
+    String nombres;
     String direccion;
     String cargo;
     int numHijos;
 
     public Empleado (String dni, String nombre){
         this.dni=dni;
-        this.nombre=nombre;
+        this.nombres=nombre;
         this.cargo="EMPLEADO";
         this.numHijos=0;
     }
@@ -35,11 +35,11 @@ public class Empleado {
     }
 
     public String getNombre() {
-        return nombre;
+        return nombres;
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nombres = nombre;
     }
 
     public String getDireccion() {
@@ -70,7 +70,7 @@ public class Empleado {
     public String toString() {
         return "Empleado{" +
                 "dni='" + dni + '\'' +
-                ", nombre='" + nombre + '\'' +
+                ", nombre='" + nombres + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", cargo='" + cargo + '\'' +
                 ", numHijos=" + numHijos +
